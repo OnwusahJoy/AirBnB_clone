@@ -25,6 +25,17 @@ And as part of the implementation of the command line interpreter coupled with t
 -   Updating attributes of an object
 -   Destroying an object
 
+## How to start it
+These instructions will get you a copy of the project up and running on your local machine (Linux distro) for development and testing purposes.
+
+## Installing
+
+You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
+
+```
+git clone https://github.com/jzamora5/AirBnB_clone.git
+```
+After cloning the repository you will have a folder called AirBnB_clone. In here there will be several files that allow the program to work.
 
 > /console.py : The main executable of the project, the command interpreter.
 >
@@ -48,6 +59,52 @@ And as part of the implementation of the command line interpreter coupled with t
 
 
 
+## How to use it
+It can work in two different modes:
+
+
+**Interactive** and **Non-interactive**.
+
+In **Interactive mode**, the console will display a prompt (hbnb) indicating that the user can write and execute a command. After the command is run, the prompt will appear again a wait for a new command. This can go indefinitely as long as the user does not exit the program.
+
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+
+In **Non-interactive mode**, the shell will need to be run with a command input piped into its execution so that the command is run as soon as the Shell starts. In this mode no prompt will appear, and no further input will be expected from the user.
+
+
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
 
 ## Format of Command Input
 
@@ -80,7 +137,7 @@ e37ebcd3-f8e1-4c1f-8095-7a019070b1fa
 user@ubuntu:~/AirBnB$ ./console.py
 ```
 
-## Available commands 
+## Available commands and what they do
 
 The recognizable commands by the interpreter are the following:
 
@@ -110,6 +167,8 @@ The recognizable commands by the interpreter are the following:
 | **count** | Retrieve the number of instances of a class.  |
 | **Usage** | **<class name\>.count()** |
 
-## Author
+## Authors
 
-Yonas Leykun
+Ehoneah Obed | Email: [ehoneahobed](mailto:ehoneahobed@hotmail.com) 
+
+Anthony Etim | Github: [otoobongekim](mailto:otoobongekim@gmail.com)
