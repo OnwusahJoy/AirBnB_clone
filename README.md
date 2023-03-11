@@ -112,4 +112,4 @@ The recognizable commands by the interpreter are the following:
 
 ## Author
 
-Yonas Leykun
+Enoch Omosebi
